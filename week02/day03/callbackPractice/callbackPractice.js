@@ -24,7 +24,7 @@ Below is a sample problem
 
 
 var first = function(arr, cb) {
-  cb(names[0]);
+  cb(arr[0]);
 };
 
 
@@ -132,15 +132,30 @@ console.log('The new names array with all the duplicate items removed is ', uniq
 
 
     //Code Here for each
-var each = function(arr, cb) {
-  
-}
 
+//ALL THREE WAYS WORK - DM
 
+    function each(arr, cb) {
+      for (var i in arr) {
+        cb(arr[i], i);
+      }
+    };
+
+    function each(arr, cb) {
+      arr.forEach(function(e, i) {
+        return cb(e, i);
+      });
+    }
+
+    function each(arr, cb) {
+      for (i = 0; i < arr.length; i++) {
+        cb(arr[i], i);
+      }
+    }
 
 var names = ['Tyler', 'Cahlan', 'Ryan', 'Colt', 'Tyler', 'Blaine', 'Cahlan'];
 each(names, function(item, indice){
-  console.log('The item in the ' + indice + ' position is ' + item)
+  console.log('The item in the ' + indice + ' position is ' + item);
 });
 
 
@@ -152,8 +167,14 @@ each(names, function(item, indice){
 
 
 
-
  //code here for getUserById
+ var getUserById = function(arr, id, cb) {
+   for (i = 0; i < users.length; i++) {
+     if (arr[i].id === id) {
+       cb(arr[i]);
+     }
+   }
+ };
 
 var users = [
   {
@@ -177,5 +198,6 @@ var users = [
 ];
 
 getUserById(users, '16t', function(user){
-  console.log('The user with the id 16t has the email of ' + user.email + ' the name of ' + user.name + ' and the address of ' + user.address);
+  console.log('The user with the id 16t has the email of ' + user.email +
+  ' the name of ' + user.name + ' and the address of ' + user.address);
 });
