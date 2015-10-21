@@ -1,0 +1,48 @@
+HTML NOTES 0
+
+Seperation of concerns (?)
+
+typically don't want to use w3 schools. stackoverflow and mdn are good.
+
+html goes in the head because it would load weird if it was in the body, flashing
+the crappy html style first.
+
+when you have a problem, open your developer tools (right click, inspect element)
+in chrome (best tools)
+
+when you want to apply one style to two diff attributes, use ','
+' ' is ancestral (?)
+
+you can apply to classes to an element
+<div style="class: class1 class2">
+
+class2 will be applied over class1 if there is a conflict
+
+universal selector has the lowest degree of specificity, 0.
+
+apparently points are assigned like 100 for id and 10 for class
+
+universal selector
+
+type selector - eg p, and pseudo-elements
+
+class selector - .
+
+id selector - #
+
+content is padded inside div, margin is outside div
+
+margin: 0 auto;
+  means top bottom 0, right left auto. auto is only for left and right.
+
+margin: 0;
+  means all 0
+
+display: none
+  hides it.
+
+font-family: mainFont, backupfont;
+  use comma to set a backup
+
+if you set width in %, you can also set max-width and min-width so it doesn't get
+too ridiculous. 

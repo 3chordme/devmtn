@@ -1,0 +1,55 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+
+div {
+  width: 100%;
+  height: 150px;
+}
+
+.header {
+  background-color: #DDD;
+  height: 130px;
+  padding: 0px 0px 0px 0px;
+}
+
+.blueSquare {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-color: #0077FF;
+  margin: 15px 0px 0px 50px;
+}
+
+.main {
+  height: 350px;
+  overflow: scroll;
+}
+
+p {
+  font-size: 28px;
+  font-family: Helvetica;
+  font-weight: 100;
+  margin: 80px 140px 50px 140px;
+  background-color: white;
+  overflow: scroll;
+}
+
+.blueFooter {
+  background-color: #0077FF;
+}
+
+.tealFooter {
+  background-color: #71EEB8;
+}
+
+.greenFooter {
+  background-color: lightgreen;
+}
+
+.yellowFooter {
+  background-color: yellow;
+}

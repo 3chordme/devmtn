@@ -1,0 +1,36 @@
+CSS
+
+Cascading Style Sheets. Gives HTML its style, its look/feel.
+
+selector {
+  property: value;
+}
+
+When there are conflicting properties, specificity wins. If there is no conflict,
+all properties apply. Tag < class < id.
+
+kind of liks a version number:
+1.0.2.4
+inline.id.class.type
+(the further left is outranks the others)
+
+.class {
+}
+
+#id {
+}
+
+generally bad practice to use id. only should be used for ONE item.
+
+Fun: the technical name for a pound sign or hashtag is an octothorpe
+
+property/value examples:
+
+width: #px
+height: #px
+background-color:
+background-image:
+color:
+font-size:
+text-align:
+line-height:

@@ -1,0 +1,21 @@
+media queries are almost like an if statement for css
+
+new things: input, button, form
+
+<form>
+<input type="button" name="name" value="submit">
+<button type="button" name="button">Also submit</button>
+<input type="text" placeholder="your name" />
+</form.
+
+!important
+  overrides specificity, should probably not be used..
+
+normalize.css
+
+*{
+  box-sizing: border-box;
+}
+
+use this for when you want your padding to be equal to your box, not get added around it.
+makes sizing easier.

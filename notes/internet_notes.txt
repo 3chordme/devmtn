@@ -1,0 +1,11 @@
+Client is your browser and the computer with the webpage is the server when you
+hear "client server."
+
+Other clients can be your phone apps, or an applewatch, gaming consoles, etc.
+
+http:// is the language, or protocol.
+
+https:// same thing but "secure"
+
+First request from client to server is just for html file, then makes requests for
+script and link tags, and images. That's why you'll see a page load incrementally.

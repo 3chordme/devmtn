@@ -1,0 +1,100 @@
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: helvetica;
+}
+
+header {
+  width: 100%;
+}
+
+.m-logo {
+  width: 100px;
+  float: left;
+}
+
+.tutorials-logo {
+  width: 100px;
+  float: left;
+}
+
+.center-block {
+  margin: 0 auto;
+  float: left;
+}
+
+.caps {
+  text-transform: uppercase;
+}
+
+button {
+  float: right;
+}
+
+input {
+  float: right;
+}
+
+.main {
+  width: 700px;
+  margin: 0 auto;
+}
+
+.main p {
+  font-family: Georgia, serif;
+  font-size: 18px;
+  line-height: 32px;
+}
+
+.author {
+  float: left;
+}
+
+.authorname {
+  color: green;
+}
+
+.vlad {
+  color: gray;
+  clear: both;
+  text-align: right;
+}
+
+.vlad a {
+  text-decoration: none;
+  color: gray;
+}
+
+.vlad span span {
+  color: white;
+  background-color: red;
+}
+
+h1 {
+  font-family: "Lucida Grand", sans-serif;
+  font-size: 45px;
+  clear: both;
+  padding-top: 40px;
+}
+
+@media (max-width: 750px) {
+  h1 {
+    font-size: 35px;
+  }
+  .main {
+    width: 95%;
+  }
+  .main p {
+    font-family: Georgia, serif;
+    font-size: 15px;
+    line-height: 22px;
+  }
+}
+
+@media (max-width: 550px) {
+  .vlad {
+    display: none;
+  }
+}

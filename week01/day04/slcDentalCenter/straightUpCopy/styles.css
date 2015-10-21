@@ -1,0 +1,181 @@
+/*
+ *Theme Name: SLC Dental Center
+ *Description: Custom Theme for SLC Dental Center
+ *Version: 1.0
+ *Author: Code Green Interactive
+ *Author URL: http://www.codegreeninteractive.com
+ */
+
+body {
+	background-image:url('images/bg.jpg');
+	background-repeat: repeat-x;
+	font-family: 'Lucida Grande', Helvetica, arial, sans-serif;
+	color:#464646;
+	background-color:#005AA3 !important;
+}
+.watermark {
+    padding-bottom:80px !important;
+    background-image:  url('images/watermark.jpg');
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+}
+.blue {
+    margin: 0 10px 0 8px;
+    color: #369dd4;
+}
+.white {
+    margin: 0 10px 0 8px;
+    color: #fff;
+}
+
+.text-right {
+    text-align: right;
+}
+.text-left {
+    text-align: left;
+}
+.text-center {
+    text-align: center;
+}
+
+.infobar {
+    line-height: 30px;
+    font-size:11px;
+padding:0px !important;
+}
+
+.contact-btn {
+    float: left;
+    margin: 25px 0 0;
+}
+
+
+.add_item {
+    position: relative;
+    top:0;
+    left:0;
+    height: 420px;
+
+}
+
+.add_link {
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+    color: #464646 !important;
+    text-decoration: none !important;
+    font-weight: bold;
+
+}
+
+.add_text {
+    padding: 5px;
+}
+
+#myCarousel {
+    padding-bottom: 40px;
+}
+#myCarousel .carousel-indicators {
+    left: 41%;
+    bottom: 0;
+}
+#addCarousel .carousel-indicators {
+    right: 0;
+    bottom: 0;
+    margin: 5px;
+}
+
+
+.add_indicators  {
+    width: 2px !important;
+    height: 2px !important;
+}
+
+.footer {
+    position: relative;
+    top: -10px;
+    font-size: 10px;
+    color: #fff;
+    line-height: 10px;
+}
+.footer a {
+    font-size: 10px;
+    color: #fff;
+    line-height: 10px;
+}
+.copyright {
+    position: relative;
+    left: -30px;
+}
+.bottom_menu {
+    margin-left: 0;
+    padding-left: 0;
+    margin-right: 0;
+    padding-right: 0;
+}
+.nav_bottom {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+    margin-right: 0;
+    padding-right: 0;
+    position: relative;
+    right: -30px;
+}
+
+.nav_bottom > li {
+    float: left;
+    padding: 0 10px;
+    border-left: 1px solid #fff;
+    line-height: 10px;
+}
+
+.nav_bottom > li:first-child {
+    border: none;
+}
+
+.nav_bottom > li:last-child {
+    padding-right: 0px;
+}
+.infobar  {position: relative; left:0;top:0;}
+.infobar-social {display:inline-block;  z-index: 10000; }
+.infobar-social .cufon  {display: none}
+.infobar-social .brand.social {z-index: 10000; display:inline-block; }
+.services_wrap {
+}
+.faq_question {
+    list-style: none;
+}
+
+.faq_question li {
+    font-weight: bold;
+}
+.faq_answer {
+    list-style: none;
+}
+.faq_answer li {
+    font-weight: normal;
+}
+ .faq_question_tag {
+    float: left;
+    margin-right: 15px;
+    font-weight: bold;
+    color: #0063ab;
+}
+
+.faq_answer_tag  {
+    float: left;
+    position: relative;
+    left: -24px;
+    font-weight: bold;
+    color: #0063ab;
+}
+
+.carousel p {line-height:20px;}
+
+.row-fluid .span12 {padding:20px 0;}
+
+@media (min-width: 768px) and (max-width: 979px) {
+	body {padding-left:20px;padding-right:20px;}
+	.container, .navbar-static-top .container, .navbar-fixed-top .container, .navbar-fixed-bottom .container {width:auto !important;}
+}

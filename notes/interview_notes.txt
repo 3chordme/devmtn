@@ -1,0 +1,9 @@
+SAMPLE INTERVIEW QUESTIONS/ANSWERS
+
+What is scope?
+
+What is specificity?
+
+Describe the border-box model in HTML/CSS.
+
+Describe positioning in HTML/CSS.

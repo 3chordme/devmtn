@@ -1,0 +1,142 @@
+git init
+git status
+git add
+git commit
+git push
+git pull
+git remote add
+git clone
+git branch
+
+> git remote add <remote repo url>
+  I think it is optional to specify the name of the server (default origin) and
+  the name of the branch (default master).
+
+> git init
+  initialized a git repository
+
+repository
+  a directory where Git has been initialized to start version controlling files
+  a hidden directory where Git operates
+
+> git status
+  see how the repository status has changed
+  healthy to run this often to see how things change
+  appears to tell you which branch you are on, what changes have happened,
+  and what is ready to commit.
+  shows untracked files.
+
+staged
+  files ready to be committed, located on the Staging Area.
+
+unstaged
+  files with changes that have not been prepared to be committed
+
+untracked
+  files arent tracked by Git yet. This usually indicates a newly created file.
+
+deleted
+  File has been deleted and is waiting to be removed from Git.
+
+> git add -A .
+  everything in a beneath the current directory (.) is added. The -A ensures
+  even file deletions are included
+
+> git reset <filename or path>
+  remove a file or files from the staging area.
+
+> git commit -m "Your message here"
+  to store staged changes (moving them from Staged Area to repository)
+  and include a message describing the changes.
+
+commit
+  a "commit" is a snapshot of our repository. This way if we ever need to look
+  back at the changes weve made (or others have made) we will see a nice
+  timeline of all changes.
+
+> git add '*.txt'
+  add all the files that fit the format .txt. use git status to confirm that
+  the correct files are staged before you commit.
+
+> git log
+  see a record of all the commits
+
+> git log --summary
+  see more info from each commit, such as where new files were added for the
+  first time or where files were deleted.
+
+remote repository
+  you need one of these if you want to push your local repo to the GitHub
+  server
+
+> git remote add <name of remote> <URL of GitHub repository>
+  command used to push local repo to GitHub server. You can name the remote
+  anything, but "origin" is common for your main.
+
+> git push -u <name of remote> <name of branch>
+  the -u tells Git to remember the parameters of the push so next time you can
+  just use git push. default branch name is "master".
+
+> git pull origin master
+  check for changes and download any that have occurred in the "master" branch
+  of the "origin" remote repository.
+
+> git stash / > git stash apply
+  Sometimes when you go to pull you may have changes you dont want to commit
+  just yet. One option you have, other than commiting, is to stash the changes.
+  Use the command 'git stash' to stash your changes, and 'git stash apply' to
+  re-apply your changes after your pull.
+
+> git diff HEAD
+  Use git diff to see what is different from your last commit. In case you want
+  the diff of your most recent commit, refer to it using the HEAD pointer.
+
+> git diff --staged
+  diff can also be used to see the changes that have occurred within files that
+  are staged.
+
+//what is a pointer? what else could go here?
+
+HEAD
+The HEAD is a pointer that holds your position within all your different commits.
+By default HEAD points to your most recent commit, so it can be used as a quick
+way to reference that commit without having to look up the SHA.
+
+//what is SHA?
+
+> git checkout -- <target>
+  Use to change files back to how they were are the time of the last commit.
+
+> git branch <new branch name>
+  Creates a copy of the code called a branch you can make separate commits to.
+  Then when youre done you can merge this branch back into your main master
+  branch.
+
+> git branch
+  View current branches.
+
+> git checkout <branch name>
+  Switch to a different branch.
+
+> git checkout -b <new branch name>
+  Create and switch to a new branch.
+
+> git rm '*.txt'
+  remove the actual files from disk and stages removal for us.
+
+//what? who is us? where is the disk in this case? actual files?
+
+> git rm -r <folder name>
+  Recursively removes all folders and files from the given directory.
+
+the '-a' option
+  If you happen to delete a file without using 'git rm' youll find that you
+  still have to 'git rm'  from the working tree. You can save this step by
+  using the '-a' option on git commit, which auto removes deleted files from
+  the commit. example: git commit -am "Delete stuff"
+
+> git merge <branch name>
+   Merges the changes from <branch name> into the branch you are currently on.
+
+> git branch -d <branch name>
+  delete branch <branch name>

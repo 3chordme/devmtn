@@ -1,0 +1,95 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: lightGray;
+  font-family: "Helvetica Neue";
+  font-size: .8em;
+  font-weight: 300;
+  line-height: 1.4em;
+}
+
+.wrapper {
+  width: 90%;
+  height: 90%;
+  margin: 0 auto;
+}
+
+header {
+  background-color: white;
+  height: 30%;
+  overflow: scroll;
+  padding: 5%;
+}
+
+header div {
+  height: 1.5em;
+  width: 5em;
+  display: inline-block;
+  padding: 1.5em 1.5em;
+  text-align: center;
+}
+
+.red-button {
+  background-color: red;
+}
+
+.blue-button {
+  background-color: blue;
+  margin-left: 1em;
+}
+
+.spacer {
+  height: 5%;
+  width: 100%;
+}
+
+.main {
+  background-color: white;
+  height: 30%;
+  overflow: scroll;
+  padding: 5%;
+}
+
+.image-holder {
+  background-color: #444;
+  height: 10em;
+  width: 100%;
+  text-align: center;
+}
+
+.image-holder span {
+  color: white;
+  font-size: 2em;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+footer {
+  height: 10%;
+  background-color: black;
+  font-size: 1.8em;
+  padding: 1em 3em;
+  text-align: right;
+}
+
+header a {
+  font-size: 1.5em;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+footer a {
+  color: white;
+  font-size: .7em;
+  margin: 1em;
+}
+
+footer a:hover {
+  color: pink;
+}

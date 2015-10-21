@@ -1,0 +1,55 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+div.blue {
+  width: 33%;
+  height: 100%;
+  background-color: #3399FF;
+  float: left;
+}
+
+div.blueGreen {
+    width: 34%;
+    height: 100%;
+    background-color: #00EFBE;
+    float:left;
+}
+
+div.container {
+  height: 100%;
+  width: 33%;
+  float: left;
+}
+
+div.lightGreen {
+  height: 70%;
+  width: 100%;
+  background-color: #E6E680;
+  float: left;
+}
+
+#imgPlace {
+  height: 30%;
+  width: 100%;
+  background-color: #E01111;
+  float: right;
+}
+
+span {
+  font-family: Helvetica;
+  font-size: 1.5em;
+  font-weight: 350;
+  text-align: center;
+  color: white;
+  display: block;
+}
+
+.v-align {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}

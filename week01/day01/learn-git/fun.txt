@@ -1,0 +1,5 @@
+“Hello world!” - said everyone, always
+
+And then it was edited, and behold, I thought that was pretty cool.
+
+And then I made another change, for to test git diff.

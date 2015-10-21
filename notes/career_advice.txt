@@ -1,0 +1,9 @@
+front end dev (better pay)
+or
+fullstacks at a startup (lower paid)
+
+html, css, javascript, angular
+
+on demo day, they want to see the project, not the code
+
+html/css makes your stuff look good. make sure projects are styled.
