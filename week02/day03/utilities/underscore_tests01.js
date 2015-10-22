@@ -58,12 +58,11 @@ var _ = { };
         iterator(collection[i], i, collection);
       }
     }
-  _.each = function(collection, iterator) {
   };
 
   // Returns the index at which value can be found in the array, or -1 if value
   // is not present in the array.
-  _.indexOf = function(array, target){
+  _.indexOf = function(array, target) {
     for (i = 0; i < array.length; i++) {
       if (array[i] === target) {
         return i;
