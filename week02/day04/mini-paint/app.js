@@ -33,4 +33,19 @@ $(document).ready(function(){
     color = 'yellow';
   })
 
+  var isPressed = false;
+  $('.box').on('mousedown', function() {
+    isPressed = true;
+  })
+
+  $('.box').on('mouseup', function() {
+    isPressed = false;
+  })
+
+  $('.box').on('mouseenter', function() {
+    if(isPressed === true) {
+      $(this).addClass(color);
+    }
+  })
+
 })
