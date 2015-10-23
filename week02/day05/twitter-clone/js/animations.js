@@ -1,7 +1,9 @@
 $(document).ready(function() {
-  //step1
+
   $('#tweet-controls').hide();
-  //step2
+  $('.tweet-actions').hide();
+  $('#profile-summary p').text('Shia Le Boof');
+
   $('.tweet-compose').focus(function(){
     $('.tweet-compose').css('height', '5em');
     $('#tweet-controls').show();
@@ -13,7 +15,8 @@ $(document).ready(function() {
       //if not delete keycode == 43
       //WRONG in mac it is keyCode 8
       //doesn't work if you hold down delete or highlight and delete or paste into.
-      //use $(this).val().length(); maybe
+      //use $('.tweet-compose').val().length(); maybe
+      //character count of tweet box is changing when you type in reply box
 
 
         if (key.keyCode !== 8) {
@@ -42,12 +45,31 @@ $(document).ready(function() {
           $('#char-count').css('color', '#999');
         }
 
-    });
-
+    });//end of keydown function
   });
 
+    $('#tweet-submit').on('click', function(ev) {
+      ev.preventDefault();
+
+      var tweetText = $('.tweet-compose').val();
+      //console.log(tweetText + " is my tweet");
+
+      var myTweet = $('.tweet:first').clone().prependTo('#stream'); //copy the first .tweet and put into front of #stream
+      //console.log(tweeted)
+
+      $('.tweet:first .avatar').attr('src', 'img/alagoon.jpg');
+      $('.tweet:first .fullname').text('Shia Le Boof');
+      $('.tweet:first .username').text('@theRealBoof');
+      $('.tweet:first .tweet-text').text(tweetText);
+      $('.tweet:first p.num-retweets').text('0');
+      $('.tweet:first p.num-favorites').text('0');
+      $('.tweet:first .tweet-compose').attr('placeholder', 'Reply to @theRealBoof');
+
+    });//end of click (the tweeting function)
 
 
 
 
-})
+
+
+});
