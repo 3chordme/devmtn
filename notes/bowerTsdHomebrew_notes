@@ -1,0 +1,56 @@
+install bower
+
+npm install -g bower
+
+make a folder called bower
+
+go into that folder
+
+bower install jquery
+
+(now there is a folder called jquery inside of your bower folder)
+
+bower install angular
+
+(now there is a folder called angular inside of your bower folder)
+
+what if you don't want to push all of those libraries to github? let's say you delete them from your bower folder.
+
+bower init
+
+name? bower
+description?
+main file? app.js
+what types of modules does this package expose?
+keywords?
+authors? you
+license?MIT
+homepage?
+set currently installed components as dependencies? Y
+...private? No
+
+Looks good? Yes
+
+creates a file bower.json
+javascript notation file
+
+bower install jquery angular --save
+
+pulls the packages and inserts them into the bower.json file. now you have dependencies.
+it basically says this project wants to have these libraries.
+
+now if you don't have those libraries present (like let's say you just got them from github)
+you just have to say bower install, it will see the libraries needed and install
+
+for visual studio
+npm install -g tsd
+tsd init
+creates a tsd.json file
+tsd install jquery angular --save
+now visual studio knows all of the jquery and angular commands
+
+
+install xcode
+run it, agree
+then install homebrew
+then intall node using homebrew

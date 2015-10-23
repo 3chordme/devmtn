@@ -8,11 +8,24 @@
 
 	<form id="newTaskForm">
 		<label>New Item</label>
+			<div class="new-item-header">
+				<button href="#" class="pull-right pencil" id="newListItem" style="">New</button>
+			</div>
+			<div id="newList">
+				New List
+			</div>
 			<input id="newItemInput" placeholder="new task">
 			<button id="saveNewItem">Save</button>
 			<button id="cancel">Cancel</button>
 	</form>
-
+	<div class="panel">
+		In Progress
+		<ul class="list-group" id="currentList"></ul>
+	</div>
+	<div class="panel">
+		Archived
+		<ul class="list-group" id="archivedList"></ul>
+	</div>
 
 
 

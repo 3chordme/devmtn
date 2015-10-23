@@ -56,7 +56,7 @@ body.append("<div>" + i + "</div>")
 
 everything in jquery is manipulating the DOM.
 
-$(".midlle").remove()
+$(".middle").remove()
 
 Doesnt effect the html document, just effects what is displayed.
 
