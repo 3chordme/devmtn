@@ -21,7 +21,6 @@ $(document).ready(function() {
       //character count of tweet box is changing when you type in reply box
 
         if (key.keyCode !== 8) {
-          //console.log(key.keyCode)
           charactersNum -= 1;
           $('#char-count').text(charactersNum.toString());
         }
@@ -49,6 +48,19 @@ $(document).ready(function() {
     });//end of keydown function
   });
 
+      $(document.body).on('mouseenter', '.tweet', function showInteract(event) {
+        console.log($(this));
+        //console.log($(event.target).find('.stats'));
+        $(this).find('.stats').show();
+        $(this).find('.reply').show();
+      });
+
+      $(document.body).on('mouseleave', '.tweet', function hideInteract(event) {
+        console.log(event.target);
+        $('.stats').hide();
+        $('.reply').hide();
+      });
+
     $('#tweet-submit').on('click', function(ev) {
       ev.preventDefault();
 
@@ -68,18 +80,5 @@ $(document).ready(function() {
       $('.tweet:first .users-interact div').empty();
 
     });//end of click (the tweeting function)
-
-
-    $('.tweet').mouseenter(function showInteract() {
-      console.log('coming')
-      $('.stats').show();
-      $('.reply').show();
-    });
-
-    $('.tweet').mouseleave(function hideInteract() {
-      console.log('leaving');
-      $('.stats').hide();
-      $('.reply').hide();
-    });
 
 });
