@@ -70,8 +70,16 @@ $(document).ready(function() {
     });//end of click (the tweeting function)
 
 
+    $('.tweet').mouseenter(function showInteract() {
+      console.log('coming')
+      $('.stats').show();
+      $('.reply').show();
+    });
 
-
-
+    $('.tweet').mouseleave(function hideInteract() {
+      console.log('leaving');
+      $('.stats').hide();
+      $('.reply').hide();
+    });
 
 });
