@@ -3,6 +3,8 @@ $(document).ready(function() {
   $('#tweet-controls').hide();
   $('.tweet-actions').hide();
   $('#profile-summary p').text('Shia Le Boof');
+  $('.stats').hide(); //hides the timestamp and retweets etc
+  $('.reply').hide(); //hides the reply box
 
   $('.tweet-compose').focus(function(){
     $('.tweet-compose').css('height', '5em');
@@ -17,7 +19,6 @@ $(document).ready(function() {
       //doesn't work if you hold down delete or highlight and delete or paste into.
       //use $('.tweet-compose').val().length(); maybe
       //character count of tweet box is changing when you type in reply box
-
 
         if (key.keyCode !== 8) {
           //console.log(key.keyCode)
@@ -64,6 +65,7 @@ $(document).ready(function() {
       $('.tweet:first p.num-retweets').text('0');
       $('.tweet:first p.num-favorites').text('0');
       $('.tweet:first .tweet-compose').attr('placeholder', 'Reply to @theRealBoof');
+      $('.tweet:first .users-interact div').empty();
 
     });//end of click (the tweeting function)
 
