@@ -95,3 +95,154 @@ you can also add second parameter Boolean (optional) to say add (true) or remove
 in jquery you can chain things
 
 body.find("li").append(blah blah blah).remove(blah blah) etc.
+
+
+FROM CODECADEMY - JQUERY Events
+
+almost always look like this:
+
+$(document).ready(function() {
+    $('thingToTouch').event(function() {
+        $('thingToAffect').effect();
+    });
+});
+
+where "thing to touch" is the HTML element you will click on, hover over, or otherwise interact with, and "thing to affect" is the HTML element that fades away, changes size, or undergoes some other transformation.
+
+Sometimes these elements are one and the same—you might hover over a <div> to change its opacity. Other times, you might interact with a separate element; for example, you might click on a button to resize a <div>.
+
+Sometimes if you want an effect to occur right away, without an event like .click() or .hover(), you will skip the second line in the above:
+
+$(document).ready(function() {
+    $('thingToAffect').effect();
+});
+
+//what is this doing?
+
+<body>
+        <form>
+        MESSAGE: <input type="text" name="message" value="Type your text here!">
+        </form>
+        <button>Add!</button><br/>
+        <div id="messages"></div>
+	</body>
+
+$(document).ready(function() {
+    $('button').click(function() {
+    	var toAdd = $("input[name=message]").val();
+        $('#messages').append("<p>"+toAdd+"</p>");
+    });
+});
+
+//what is input[name=message]
+.hover()
+
+$('div').hover(function(){
+        $(this).addClass('red');
+    });
+
+OR
+The hover effect is able to take two functions, separated by a (very important) comma.
+
+$('div').hover(
+    function(){
+      $(this).addClass('highlight');
+   },
+   function(){
+      $(this).removeClass('highlight');
+   }
+);
+
+The first function is called when we first mouse over the target, the second function
+is called when our mouse leaves the object. The second function doesnt have to be
+the opposite of the first, but it is very common.
+
+.focus() - an element has focus when we click on it or tab over to it. An example of
+focus would be a text box lighting up when you are filling it out in a form. It only
+works on elements that can receive focus. The list is a bit vague, but <input> and
+<textarea> are the usual suspects.
+
+.keydown() - only works on whatever page element has focus.
+
+$(document).ready(function(){
+    $(this).keydown(function(){
+        $('div').animate({left:'+=10px'},500);
+
+    });
+});
+
+.animate() - the animate effect takes two inputs: the animation to perform, and the time in which to perform the animation.
+
+$(document).ready(function() {
+   $('div').animate({left:'+=10px'},500);
+});
+
+.fadeOut('speed', amount) - amount and speed are both optional?
+
+$(document).ready(function() {
+    $('div').on('click', function() {
+      $('div').fadeOut('fast');
+    });
+});
+
+.selectable() -
+
+.dblclick()
+
+
+MOVING MARIO
+
+$(document).ready(function() {
+    $(document).keydown(function(key) {
+        switch(parseInt(key.which,10)) {
+			// Left arrow key pressed
+			case 37:
+				$('img').animate({left: "-=10px"}, 'fast');
+				break;
+			// Up Arrow Pressed
+			case 38:
+				// Put our code here
+				$('img').animate({top: "-=10px"}, 'fast');
+				break;
+			// Right Arrow Pressed
+			case 39:
+			    $('img').animate({left: "+=10px"}, 'fast')
+				// Put our code here
+				break;
+			// Down Arrow Pressed
+			case 40:
+				// Put our code here
+				$('img').animate({top: "+=10px"}, 'fast');
+				break;
+		}
+	});
+});
+
+.sortable()
+
+.selectable()
+
+.accordion() expanding dropdown menu. reveals contents of the divs.?
+
+$(document).ready(function(){
+    $('#menu').accordion();
+});
+
+//along with html
+
+<div id="menu">
+    <h3>Section 1</h3>
+    <div>
+        <p>Im the first section!</p>
+    </div>
+    <h3>Section 2</h3>
+    <div>
+        <p>Im the second section!</p>
+    </div>
+    <h3>Section 3</h3>
+    <div>
+        <p>Im the third section!</p>
+    </div>
+</div>
+
+//makes section 1 2 and 3 visible, but <p>s are only visible when <h3>s are clicked
