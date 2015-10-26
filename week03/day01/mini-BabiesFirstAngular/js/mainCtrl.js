@@ -1,6 +1,6 @@
 var app = angular.module('friendsList');
 
-app.controller('mainCtrl', function($scope){
+app.controller('mainCtrl', function($scope) {
   $scope.name = "David";
   $scope.friends = [
     'Ronnie',
@@ -9,5 +9,8 @@ app.controller('mainCtrl', function($scope){
     'Bonnie',
     'Connie',
   ];
+  $scope.addFriend = function() {
+
+  }
 
 });
