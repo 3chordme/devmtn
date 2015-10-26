@@ -438,4 +438,19 @@ app.controller('FriendController', function($scope) {
     }
   ];
 
+  $scope.removeNull = function() {
+    console.log("removeNull success")
+    for (i = 0; i < $scope.friends.length; i++)
+      if ($scope.friends[i].current_location === null) {
+        $scope.friends[i].current_location = "";
+      }
+  };
+
+  $scope.removeNull();
+
+  //how to .map?
+  //rules for calling functions in Angular
+  //why create variables in step 5?
+  //how to use ng-options and an array to create the filler options?
+
 });
