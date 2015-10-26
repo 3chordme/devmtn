@@ -2,8 +2,17 @@ var app = angular.module('angularFriends');
 
 app.controller('FriendController', function($scope) {
   $scope.test = 'Hello World';
+
   $scope.attributeSort = '';
   $scope.booleanDescending = false;
+
+  $scope.sortOptions = [
+    {text: 'Name', value: 'name'},
+    {text: '# Friends', value: 'friend_count'},
+    {text: 'City', value: 'current_location.city'},
+    {text: 'State', value: 'current_location.state'},
+    {text: 'Country', value: 'current_location.country'},
+  ]
 
   $scope.friends = [
     {

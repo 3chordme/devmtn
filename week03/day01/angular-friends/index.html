@@ -38,12 +38,7 @@
 
         <input class="form-control" placeholder="Search Location" ng-model="searchLocation.current_location.name">
 
-        <select class="input-medium" ng-model="attributeSort">
-          <option value="name">Name</option>
-          <option value="friend_count">#Friends</option>
-          <option value="current_location.city">City</option>
-          <option value="current_location.state">State</option>
-          <option value="current_location.country">Country</option>
+        <select class="input-medium" ng-model="attributeSort" ng-options="option as option.text for option in sortOptions">
         </select>
 
         <select class="input-medium" ng-model="booleanDescending">
