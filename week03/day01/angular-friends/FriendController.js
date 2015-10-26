@@ -3,7 +3,7 @@ var app = angular.module('angularFriends');
 app.controller('FriendController', function($scope) {
   $scope.test = 'Hello World';
   $scope.attributeSort = '';
-  $scope.booleanAscending = true;
+  $scope.booleanDescending = false;
 
   $scope.friends = [
     {

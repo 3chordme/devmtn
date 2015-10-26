@@ -38,24 +38,24 @@
 
         <input class="form-control" placeholder="Search Location" ng-model="searchLocation.current_location.name">
 
-        <select class="input-medium" ng-model="selectInput">
+        <select class="input-medium" ng-model="attributeSort">
           <option value="name">Name</option>
-          <option value="selectInput">#Friends</option>
-          <option value="selectInput">City</option>
-          <option value="selectInput">State</option>
-          <option value="selectInput">Country</option>
+          <option value="friend_count">#Friends</option>
+          <option value="current_location.city">City</option>
+          <option value="current_location.state">State</option>
+          <option value="current_location.country">Country</option>
         </select>
 
-        <select class="input-medium">
+        <select class="input-medium" ng-model="booleanDescending">
           <option value="+">Descending</option>
-          <option value="-">Ascending</option>
+          <option value="">Ascending</option>
         </select>
 
       </div>
     </form>
 
     <ul>
-      <li class="friend" ng-repeat="friend in friends | filter: searchName | filter: searchLocation">
+      <li class="friend" ng-repeat="friend in friends | filter: searchName | filter: searchLocation | orderBy: attributeSort: booleanDescending">
         <img class="profile-pic" src="{{ friend.pic_square }}">
 
         <h3>{{ friend.name }}</h3>
