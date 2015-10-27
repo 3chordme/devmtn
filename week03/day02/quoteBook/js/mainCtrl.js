@@ -10,4 +10,18 @@ angular.module('quoteBook')
 
     $scope.quoteData = $scope.dataGot();
 
+    $scope.addData = function() {
+      var quoteObject = {
+        text: $scope.textInput,
+        author: $scope.authorInput
+      };
+      if (quoteObject.text != "" && quoteObject.author != "") { //not working!!!
+        //why not (quoteObject.text && quoteObject.author) { ?
+        dataService.addData(quoteObject);
+      }
+    };
+
+  
+
+
   });

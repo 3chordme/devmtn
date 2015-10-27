@@ -12,19 +12,14 @@ angular.module('quoteBook')
   ];
 
     this.getData = function() {
-      console.log("this.getData")
       return quotes;
     };
 
     this.addData = function(dataObject) {
-      console.log("this.addData")
-      if (dataObject.text && dataObject.author) { //this doesn't stop objects with extra properties from being added!
         quotes.push(dataObject);
-      }
-    };
+      };
 
     this.removeData = function(quoteText) {
-      console.log("this.removeData")
       for (i = 0; i < quotes.length; i++) {
         if (quote[i].text === quoteText) {
           quote.splice(i, 1);

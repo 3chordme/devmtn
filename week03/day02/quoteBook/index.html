@@ -2,7 +2,7 @@
 <html lang="en" ng-app="quoteBook">
 <head>
   <meta charset="UTF-8">
-  <link rel="stylesheet" href="styles.css" media="screen" title="no title" charset="utf-8">
+  <link rel="stylesheet" href="styles.css">
   <title>Document</title>
 </head>
 <body ng-controller="mainCtrl">
@@ -10,8 +10,27 @@
   <div>
     {{ test }}
   </div>
-  <div ng-repeat="quote in quoteData">
-    {{ quote }}
+
+  <div ng-repeat="quote in quoteData" class="quoteDiv">
+    <p class="quoteText">"{{ quote.text }}"</p>
+    <p class="quoteAuthor">-{{ quote.author }}</p>
+    <button name="Remove Quote" type="button" ng-click="quoteRemover">Remove Quote</button>
+  </div>
+
+  <div>
+    Author: <input type="text" ng-model="authorInput">
+    Text: <input type="text" ng-model="textInput">
+    <button name="Add Quote" type="button" ng-click="addData();">Add Quote</button>
+  </div>
+
+  <div>
+    Text: <input type="text" ng-model="quoteFilter">
+    <button name="Filter Quotes" type="button" ng-click="quoteFilterer">Filter Quotes</button>
+  </div>
+
+  <div>
+    Text: <input type="text" ng-model="removalInput">
+    <button name="Find and Remove Quote" type="button" ng-click="findAndRemove();">Find and Remove Quote</button>
   </div>
 
   <script src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.3/angular.min.js"></script>
@@ -19,6 +38,5 @@
   <script src="js/mainCtrl.js"></script>
   <script src="js/dataService.js"></script>
 
-</script>
 </body>
 </html>

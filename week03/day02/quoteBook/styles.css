@@ -1,0 +1,14 @@
+.quoteDiv {
+  border: 1px solid black;
+  margin: 5px 5px;
+  padding: 10px 25px;
+}
+
+.quoteText {
+  font-size: 1.3em;
+}
+
+.quoteAuthor {
+  text-transform: uppercase;
+  font-size: .8em;
+}
