@@ -29,7 +29,7 @@ angular.module('quoteBook')
           quotes.splice(i, 1);
         }
         else {
-          console.log('error');
+          console.log('Error: "' + quoteText + '" is not a quote.');
         }
       }
     };
