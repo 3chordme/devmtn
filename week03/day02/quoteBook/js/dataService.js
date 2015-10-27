@@ -19,8 +19,8 @@ angular.module('quoteBook')
         quotes.push(dataObject);
       };
 
-    this.removeData = function(quoteText) {
-
+    this.removeData = function(index) {
+      quotes.splice(index, 1);
     };
 
     this.findAndRemove = function(quoteText) {
@@ -32,6 +32,6 @@ angular.module('quoteBook')
           console.log('Error: "' + quoteText + '" is not a quote.');
         }
       }
-    };
+    }; //try to make using forEach for funsies
 
   });

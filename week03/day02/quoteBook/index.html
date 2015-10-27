@@ -11,10 +11,10 @@
     {{ test }}
   </div>
 
-  <div ng-repeat="quote in quoteData" class="quoteDiv">
+  <div ng-repeat="quote in quoteData track by $index" class="quoteDiv">
     <p class="quoteText">"{{ quote.text }}"</p>
     <p class="quoteAuthor">-{{ quote.author }}</p>
-    <button name="Remove Quote" type="button" ng-click="removeData();">Remove Quote</button>
+    <button name="Remove Quote" type="button" ng-click="removeData($index);">Remove Quote</button>
   </div>
 
   <div>

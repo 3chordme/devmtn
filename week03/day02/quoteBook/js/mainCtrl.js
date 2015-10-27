@@ -22,13 +22,12 @@ angular.module('quoteBook')
     };
 
 //remove the quote above the button
-    $scope.removeData = function() {
-      console.log();
+    $scope.removeData = function(index) {
+      dataService.removeData(index);
     };
 
 //remove the quote that matches the text input by the user
     $scope.findAndRemove = function() {
-      console.log($scope.removalInput);
       dataService.findAndRemove($scope.removalInput);
     };
 
