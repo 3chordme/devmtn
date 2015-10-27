@@ -14,7 +14,7 @@
   <div ng-repeat="quote in quoteData" class="quoteDiv">
     <p class="quoteText">"{{ quote.text }}"</p>
     <p class="quoteAuthor">-{{ quote.author }}</p>
-    <button name="Remove Quote" type="button" ng-click="quoteRemover">Remove Quote</button>
+    <button name="Remove Quote" type="button" ng-click="removeData();">Remove Quote</button>
   </div>
 
   <div>
@@ -25,7 +25,7 @@
 
   <div>
     Text: <input type="text" ng-model="quoteFilter">
-    <button name="Filter Quotes" type="button" ng-click="quoteFilterer">Filter Quotes</button>
+    <button name="Filter Quotes" type="button" ng-click="quoteFilterer();">Filter Quotes</button>
   </div>
 
   <div>

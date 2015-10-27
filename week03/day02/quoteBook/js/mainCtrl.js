@@ -21,7 +21,16 @@ angular.module('quoteBook')
       }
     };
 
-  
+//remove the quote above the button
+    $scope.removeData = function() {
+      console.log();
+    };
+
+//remove the quote that matches the text input by the user
+    $scope.findAndRemove = function() {
+      console.log($scope.removalInput);
+      dataService.findAndRemove($scope.removalInput);
+    };
 
 
   });

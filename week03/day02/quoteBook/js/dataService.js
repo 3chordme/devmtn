@@ -20,9 +20,16 @@ angular.module('quoteBook')
       };
 
     this.removeData = function(quoteText) {
+
+    };
+
+    this.findAndRemove = function(quoteText) {
       for (i = 0; i < quotes.length; i++) {
-        if (quote[i].text === quoteText) {
-          quote.splice(i, 1);
+        if (quotes[i].text === quoteText) {
+          quotes.splice(i, 1);
+        }
+        else {
+          console.log('error');
         }
       }
     };
