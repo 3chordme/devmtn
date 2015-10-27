@@ -57,53 +57,6 @@ Single Page application
 MVC
 Model View Controller
 
---------FROM ANGULARJS.ORG--------
-
-TEMPLATE
-HTML with additional markup.
-
-DIRECTIVES
-Extend HTML with custom attributes and elements.
-
-MODEL
-The data shown to the user in the view and with which the user interacts.
-
-SCOPE
-Context where the model is stored so that controllers, directives, and expressions
-can access it.
-
-EXPRESSIONS
-Access variables from the scope
-
-COMPILER
-Parses the template and instantiates directives and expressions.
-
-FILTER
-Formats the value of an expression for display to the user.
-
-VIEW
-What the user sees (the DOM).
-
-DATA BINDING
-Sync data between the model and the view.
-
-CONTROLLER
-The business logic behind views.
-
-DEPENDENCY INJECTION
-Creates and wires objects and functions.
-
-INJECTOR
-Dependency injection container.
-
-MODULE
-A container for the different parts of an app, including controllers, services,
-filters, directives which configures the injector.
-
-SERVICE
-Reusable business logic independent of views.
-
-
 ---------FROM CODECADEMY---------
 
 AngularJS is a framework for building dynamic web apps.
