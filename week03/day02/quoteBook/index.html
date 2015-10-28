@@ -10,25 +10,25 @@
   <div>
     {{ test }}
   </div>
-  <p>{{ quoteFilter }}</p>
   <div ng-repeat="quote in quoteData | filter: quoteFilter track by $index" class="quoteDiv">
     <p class="quoteText">"{{ quote.text }}"</p>
     <p class="quoteAuthor">-{{ quote.author }}</p>
     <button name="Remove Quote" type="button" ng-click="removeData($index);">Remove Quote</button>
   </div>
 
-  <div>
+  <div class="inputHolder">
     Author: <input type="text" ng-model="authorInput" placeholder="Author">
     Text: <input type="text" ng-model="textInput" placeholder="Text">
     <button name="Add Quote" type="button" ng-click="addData();">Add Quote</button>
   </div>
 
-  <div>
+  <div class="inputHolder">
     Text: <input type="text" ng-model="quoteFilter" placeholder="Text to Filter By">
-    <button name="Filter Quotes" type="button" ng-click="assignFilter">Filter Quotes</button>
+    <button name="Filter Quotes" type="button" ng-click="assignFilter()">Filter Quotes</button>
+    <!-- I need to fix this so that the filter only updates when the button is clicked -->
   </div>
 
-  <div>
+  <div class="inputHolder">
     Text: <input type="text" ng-model="removalInput" placeholder="Find and Remove Text">
     <button name="Find and Remove Quote" type="button" ng-click="findAndRemove();">Find and Remove Quote</button>
   </div>

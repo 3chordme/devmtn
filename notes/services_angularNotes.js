@@ -52,3 +52,5 @@ clarity. The less you have in your controller the better.
 
 service never takes in $scope, because only controller uses $scope to interact with
 view.
+
+controller is intermediary betwee the view and the model.

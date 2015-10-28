@@ -12,3 +12,9 @@
   text-transform: uppercase;
   font-size: .8em;
 }
+
+.inputHolder {
+  border: 1px solid red;
+  margin: 10px 5px;
+  padding: 10px 25px;
+}

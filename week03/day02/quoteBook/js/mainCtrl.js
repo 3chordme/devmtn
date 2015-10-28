@@ -31,7 +31,12 @@ angular.module('quoteBook')
 //remove the quote that matches the text input by the user
     $scope.findAndRemove = function() {
       dataService.findAndRemove($scope.removalInput);
+      $scope.removalInput = "";
     };
 
+//need this to work: should filter when the filter button is clicked
+    $scope.assignFilter = function() {
+      console.log('searching for ...' + $scope);
+    };
 
   });
