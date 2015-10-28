@@ -15,10 +15,12 @@ angular.module('quoteBook')
         text: $scope.textInput,
         author: $scope.authorInput
       };
-      if (quoteObject.text != "" && quoteObject.author != "") { //not working!!!
-        //why not (quoteObject.text && quoteObject.author) { ?
+      if (quoteObject.text != undefined && quoteObject.author != undefined) {
+        //why not (quoteObject.text && quoteObject.author) { <----- because the object and keys exist, they're just undefined. can't use "" either because not empty strings.
         dataService.addData(quoteObject);
       }
+      $scope.textInput = undefined;
+      $scope.authorInput = undefined;
     };
 
 //remove the quote above the button
