@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 html {
   height: 100%;
   width: 100%;
@@ -7,7 +11,10 @@ body {
   height: 95%;
   width: 100%;
   font-family: sans-serif;
-  background-image: url('http://addyosmani.com/blog/wp-content/uploads/2013/04/unicorn.jpg');
+  background-color: gray;
+  background-image: linear-gradient(salmon, red);
+  background-attachment: fixed;
+  /*background-image: url('http://addyosmani.com/blog/wp-content/uploads/2013/04/unicorn.jpg');*/
 }
 
 .main-container {
@@ -20,6 +27,11 @@ body {
 
 .main-container h1 {
   text-align: center;
+  text-transform: uppercase;
+  font-size: 3em;
+  font-weight: bold;
+  color: white;
+  text-shadow: 1px 1px red;
 }
 
 .text-box {
@@ -27,8 +39,30 @@ body {
   width: 40%;
 }
 
-p{
+input[type="text"]:focus, textarea:focus {
+  box-shadow: 0 0 5px rgba(250, 103, 138, 1);
+  border: 1px solid rgba(250, 103, 138, 1);
+}
+
+p {
   text-align: center;
   margin: 3px 0;
   font-size: 17px;
+}
+
+.messages-container {
+  background-color: white;
+  /*color: white;*/
+  padding: 10px;
+  margin: 5px;
+  box-shadow: 1px 1px red;
+  border-radius: 10px;
+}
+
+.messagePosted {
+  font-weight: bold;
+}
+
+.timePosted {
+  font-size: .8em;
 }

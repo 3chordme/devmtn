@@ -18,16 +18,16 @@ app.service('parseService', function($http){
   //postData method here
   this.postData = function(yourMessage) {
     return $http({
-      method: POST,
+      method: 'POST',
       url: 'https://api.parse.com/1/classes/chat',
-      data: { text: yourMessage}
+      data: { text: yourMessage }
     });
   };
 
   //getData method here
   this.getData = function() {
     return $http({
-      method: GET,
+      method: 'GET',
       url: 'https://api.parse.com/1/classes/chat?order=-createdAt'
     });
   };
