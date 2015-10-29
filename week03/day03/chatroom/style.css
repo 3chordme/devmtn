@@ -39,6 +39,10 @@ body {
   width: 40%;
 }
 
+form {
+  margin: 10px
+}
+
 input[type="text"]:focus, textarea:focus {
   box-shadow: 0 0 5px rgba(250, 103, 138, 1);
   border: 1px solid rgba(250, 103, 138, 1);
