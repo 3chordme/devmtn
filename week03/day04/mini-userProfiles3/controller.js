@@ -5,9 +5,10 @@ app.controller('MainController', function($scope, mainService) {
   $scope.test = 'Success!';
 
   $scope.getUsers = function() {
-    mainService.getUsers().then(function(dataFromService) {
-      $scope.users = dataFromService;
-    });
+    mainService.getUsers() //this part gets the promise object from $q.defer()
+      .then(function(dataFromService) { //this will happen when the promise resolves
+        $scope.users = dataFromService;
+      });
   }
 
   $scope.getUsers();
