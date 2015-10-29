@@ -4,7 +4,7 @@ app.controller('mainCtrl', function($scope, itunesService){
   //This is setting up the default behavior of our ng-grid. The important thing to note is
   //the 'data' property. The value is 'songData'. That means ng-grid is looking for songData on $scope and is putting whatever songData is into the grid.
   //this means when you make your iTunes request, you'll need to get back the information, parse it accordingly, then set it to songData on the scope -> $scope.songData = ...
-  $scope.gridOptions = { 
+  $scope.gridOptions = {
       data: 'songData',
       height: '110px',
       sortInfo: {fields: ['Song', 'Artist', 'Collection', 'Type'], directions: ['asc']},
@@ -23,18 +23,25 @@ app.controller('mainCtrl', function($scope, itunesService){
   //First inject itunesService into your controller.
 
     //code here
-
+    //David: ummm...it appears to already be done, and also why would code go here?
+    //Doesn't the injection go up top?
 
   //Now write a function that will call the method on the itunesService that is responsible for getting the data from iTunes, whenever the user clicks the submit button
   //*remember, that method should be expecting an artist name. The artist name is coming from the input box on index.html, head over there and check if that input box is tied to any specific model we could use.
   //Also note that that method should be retuning a promise, so you could use .then in this function.
-    
-    //Code here
 
+    //Code here
+    $scope.getSongData = function() {
+      itunesService.artistSearch($scope.artist)
+        .then(function(artistSearchInput) {
+          $scope.artistSearchInput = artistSearchInput;
+        });
+    };
 
   //Check that the above method is working by entering a name into the input field on your web app, and then console.log the result
 
     //Code here
+    //David: I put the console.log in my service.
 
 
   //If everything worked you should see a huge array of objects inside your console. That's great! But unfortunately that's not what ng-grid is expecting. What you need to do now
@@ -56,7 +63,3 @@ app.controller('mainCtrl', function($scope, itunesService){
 
     //Code here
 });
-
-
-
-
