@@ -23,12 +23,13 @@ app.service('itunesService', function($http, $q){
 
       songs.forEach(function (song) {
         result.push({
-          AlbumArt: song.artworkUrl60,
+          AlbumArt: song.artworkUrl100,
           Artist: song.artistName,
           Collection: song.collectionName,
-          CollectionPrice: song.CollectionPrice,
+          CollectionPrice: song.collectionPrice,
           Play: song.previewUrl,
-          Type: song.kind
+          Type: song.kind,
+          ReleaseDate: new Date(song.releaseDate).toDateString()
         });
       });
 
