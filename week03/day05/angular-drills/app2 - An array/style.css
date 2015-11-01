@@ -3,6 +3,16 @@
 	width: 100%;
 }
 .personData {
-	width: 24%;	
+	width: 24%;
 	display: inline-block;
+}
+
+li {
+	border: 1px solid black;
+	margin: 10px;
+	padding: 10px;
+}
+
+li > p > span {
+	font-weight: bold;
 }

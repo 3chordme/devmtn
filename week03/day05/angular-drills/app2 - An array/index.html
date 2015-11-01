@@ -3,7 +3,17 @@
 		<link rel="stylesheet" href="style.css"></link>
 	</head>
 	<body ng-controller="arrayController">
-	
+
+		<div>Test: {{ test }}</div>
+		<!-- <div>{{ data[0] }}</div> -->
+
+		<li ng-repeat="datam in data">
+			<p><span>Name:</span> {{ datam.name }}</p>
+			<p><span>Email:</span> {{ datam.email }}</p>
+			<p><span>Date Employed:</span> {{ datam.dateEmployed }}</p>
+			<p><span>Phone:</span> {{ datam.phone }}</p>
+		</li>
+
 		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
 		<script src="app.js"></script>
 		<script src="controller.js"></script>
