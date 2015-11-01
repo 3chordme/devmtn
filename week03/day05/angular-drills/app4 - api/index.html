@@ -1,9 +1,20 @@
 <html ng-app="apiApp">
-	<body>
-		
+	<body ng-controller="myCtrl">
+
+		{{ test }}
+
+	<div ng-repeat="prop in props">
+		{{ prop }}
+	</div>
+
+	<hr/>
+		<div ng-repeat="bird in birds">
+			{{ bird.commonName }}
+		</div>
 				<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
 		<script src="app.js"></script>
 		<script src="controller.js"></script>
 		<script src="service.js"></script>
+		<script src="getPropsService.js"></script>
 	</body>
 </html>
