@@ -8,5 +8,6 @@ angular.module('apiApp').controller('mainCtrl', function($scope, myService) {
     $scope.birds = dataFromPartAInTheChain;
   });
   //this should return just an array but it is returning the whole object...weird
+  //fixed bug by removing promise from promise.then
 
 });
