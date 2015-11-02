@@ -1,7 +1,15 @@
 <html ng-app="apiApp">
-	<body>
-		
-				<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
+	<body ng-controller="mainCtrl">
+
+		<div>
+			Test: {{ testResult }}
+		</div>
+
+		<div ng-repeat="bird in birds">
+			{{ bird.commonName }}
+		</div>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
 		<script src="app.js"></script>
 		<script src="controller.js"></script>
 		<script src="service.js"></script>
