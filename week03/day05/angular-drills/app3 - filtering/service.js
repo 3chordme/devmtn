@@ -100,3 +100,15 @@ var myData = [
 	{"name": "Amber Ball", "email": "Quisque@Aenean.ca", "dateEmployed": "08/11/2015", "phone": "651-3983"},
 	{"name": "Odysseus Nash", "email": "purus@rutrum.co.uk", "dateEmployed": "01/08/2016", "phone": "722-7908"}
 ];
+
+angular.module('app3').service('myService', function() {
+
+	this.dataCapture = function() {
+		var arr = [];
+		for (i = 0; i < myData.length; i++) {
+			arr.push(myData[i]);
+		}
+		return arr;
+	};
+
+});

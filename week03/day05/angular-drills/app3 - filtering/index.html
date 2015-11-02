@@ -1,7 +1,18 @@
 <html ng-app="app3">
+	<head>
+		<link rel="stylesheet" href="styles.css">
+	</head>
 	<body ng-controller="mainCtrl">
 		Test: {{ testResult }}
-
+		<form>
+			<input type="text" placeholder="Name" ng-model="nameFilter.name">
+		</form>
+		<div ng-repeat="data in dataCapture | filter: nameFilter" class="list">
+			<p>Name: {{ data.name }}</p>
+			<p>Email: {{ data.email }}</p>
+			<p>Date Employed: {{ data.dateEmployed }}</p>
+			<p>Phone: {{ data.phone }}</p>
+		</div>
 
 
 		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
