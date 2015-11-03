@@ -1,6 +1,8 @@
 Custom Directives
 
-Allow you to reuse pieces.
+Allows you to reuse pieces.
+
+Allows you to do things that angular cant.
 
 Directive needs to always return an object.
 
@@ -12,7 +14,7 @@ Pascal case is camel case except first letter is capitalized. WHy? Pascal hates 
 
 restrict: EA and/or C
 
-Don't use C. E (Element) means <my-customer></my-customer> works.
+Dont use C. E (Element) means <my-customer></my-customer> works.
 A (attribute)
 
 link(scope, element, attribute) {
