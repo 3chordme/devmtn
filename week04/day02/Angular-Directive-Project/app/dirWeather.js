@@ -4,7 +4,7 @@ angular.module('directivePractice').directive('dirWeather', function(){
     templateUrl: 'app/dirWeather.html',
     scope: {
       currentUser: '=',
-      weatherCall: '&'
+      weatherCall: '&',
     },
     controller: function($scope) {
       $scope.weatherCall({ city: $scope.currentUser.city })

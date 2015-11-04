@@ -2,4 +2,4 @@
 
 <dir-weather current-user="users[0]" weather-call="getWeather(city)"></dir-weather>
 
-<dir-display test="myTest" my-check="checkItOut" ng-repeat="user in users"></dir-display>
+<dir-display ng-repeat="user in users" user="user" set-user="setUser(user)"></dir-display>

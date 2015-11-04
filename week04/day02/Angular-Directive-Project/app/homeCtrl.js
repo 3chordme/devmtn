@@ -37,6 +37,12 @@ angular.module('directivePractice').controller('homeCtrl', function($scope, weat
 
 $scope.getWeather = function(city) {
     return weatherService.getWeather(city);
+};
+
+$scope.setUser = function(user) {
+  console.log('user:', user);
+  $scope.user = user;
+};
 
 
 });
