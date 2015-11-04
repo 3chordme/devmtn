@@ -1,4 +1,4 @@
-angular.module('directivePractice').controller('homeCtrl', function($scope){
+angular.module('directivePractice').controller('homeCtrl', function($scope, weatherService){
 
   $scope.test = "Success!";
 
@@ -35,7 +35,8 @@ angular.module('directivePractice').controller('homeCtrl', function($scope){
  }
 ];
 
-
+$scope.getWeather = function(city) {
+    return weatherService.getWeather(city);
 
 
 });

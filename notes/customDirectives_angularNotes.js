@@ -23,3 +23,17 @@ return{
   link: link;
 }
 }
+
+might have to use $apply() to make things show up.
+
+Properties on the scope object represent the attributes on the directive in the html.
+
+scope: {
+  string: '@',
+  link: '=',
+  func: '&'
+}
+
+@ says take in my attribute value as a string.
+= says take in my attribute value as a two-way bound variable from the parent scope.
+& says take in my attribute value as a reference to a function on the parent scope.
