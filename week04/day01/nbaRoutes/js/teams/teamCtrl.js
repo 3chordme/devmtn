@@ -14,15 +14,15 @@ app.controller('teamCtrl', function ($scope, $stateParams, teamService, teamData
         $scope.showNewGameForm = !$scope.showNewGameForm;
     }
 
-    if ($stateParams.team = 'utahjazz') {
+    if ($stateParams.team === 'utahjazz') {
       $scope.homeTeam = 'Utah Jazz';
       $scope.logoPath = 'images/jazz-logo.png';
     }
-    else if ($stateParams.team = 'miamiheat') {
+    else if ($stateParams.team === 'miamiheat') {
       $scope.homeTeam = 'Miami Heat';
       $scope.logoPath = 'images/heat-logo.png';
     }
-    else if ($stateParams.team = 'losangeleslakers') {
+    else if ($stateParams.team === 'losangeleslakers') {
       $scope.homeTeam = 'Los Angeles Lakers';
       $scope.logoPath = 'images/lakers-logo.png';
     }
@@ -30,7 +30,7 @@ app.controller('teamCtrl', function ($scope, $stateParams, teamService, teamData
 
     $scope.submitGame = function() {
 
-      $scope.newGame.homeTeam = homeTeam.split(' ').join('').toLowerCase();
+      $scope.newGame.homeTeam = $scope.homeTeam.split(' ').join('').toLowerCase();
 
       teamService.addNewGame($scope.newGame)
 
@@ -47,4 +47,5 @@ app.controller('teamCtrl', function ($scope, $stateParams, teamService, teamData
           });
         });//this makes no sense to me whatsoever and is most likely incorrect
     }
+    console.log($scope);
 });
