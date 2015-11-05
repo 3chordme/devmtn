@@ -7,3 +7,9 @@ What is specificity?
 Describe the border-box model in HTML/CSS.
 
 Describe positioning in HTML/CSS.
+
+Three types of scope in angular: isolated, inherited, shared.
+
+Apply, Call, Binding. Types of binding implicit, explicit, ...
+
+Learn CSS really well. - try stylus (says Zac).
