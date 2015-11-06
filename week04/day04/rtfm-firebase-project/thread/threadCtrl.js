@@ -11,5 +11,7 @@ angular.module('rtfmApp')
         username: username,
         text: text
       });
+      $scope.newCommentText = "";
+      $scope.username = "";
     };
   });
