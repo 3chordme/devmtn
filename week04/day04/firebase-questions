@@ -1,0 +1,52 @@
+QUESTIONS
+
+>Why make a folder called js that contains .html children? Better naming protocol?
+
+No standard, but you can separate into services, directives, features(like pages),
+and assets.
+
+>Which of these is called a directive?
+
+When you use .directive in your js and <directive-name> in your html.
+
+>Other use cases for .constant?
+
+Any time you want something that won't change that you can inject. You could write
+a service for it but that is just more work.
+
+>Does chaining methods work because the immediate parent doesn't have the method
+>so it looks for the method on the closest parent that DOES have the method?
+
+>How do you know when you need to inject things? Do some files have access to info
+>automatically, or do you always have to inject if you want access? Are there any
+>rules about the "direction" you can inject?
+
+Any service you want to use you need to inject. You can also inject functions from
+your resolve object. Also $scope and other things from your libraries. It's to
+stop pages from taking forever to load. You can also inject constants.
+
+>Am I supposed to declare/assign firebaseRef somewhere?
+
+No
+
+>What does resolve do?
+
+Waits to load page/controller until the data asked for is returned. Risky because
+it can freeze.
+
+>Step 6 - setting up resolve. Isn't a property whose value is a function called a
+>method? Did I set this up right? What does "take in threadService" mean?
+
+>Do you always add $scope to every controller? If not, why not?
+
+Not if you use "controller as" syntax.
+
+>What does "Add pass in threadsRef" mean? Is that (hopefully) a typo?
+
+Yes, it was just asking you to pass in aka inject threadsRef.
+
+>What is "required" for inputs?
+
+>Shouldn't it be ng-sref not ng-href?
+
+>What is ng-disabled="newCommentForm.$invalid"?

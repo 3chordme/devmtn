@@ -12,6 +12,10 @@ Google, who is concerned with the ecosytem of the web, which means dev stuff is 
 So far with angular we havent been able to store data. With firebase we can host,
 authenticate, login, etc.
 
+checkout firebase.com/docs or google angular fire docs
+
+Firebase runs off of urls, when you make a ref its an instance of the firebase object.
+
 For basic applications you may not need servers.
 
 Load firebase in a script tag in your html.
@@ -46,3 +50,11 @@ Firebase likes shallow data. Limit your nesting.
 Example problem: Every user
 
 Event loop (javascript) ridiculously fast. Digest loop (angular) fast.
+
+AUTHORIZATIONS
+
+$firebaseAuth
+
+Javaascript web token
+
+Inject $firebaseAuth service
