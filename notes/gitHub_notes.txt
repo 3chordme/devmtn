@@ -8,6 +8,14 @@ git remote add
 git clone
 git branch
 
+Git tip!!!! go to your terminal, any folder, and type the following:
+>git config --global alias.graph "log --graph --oneline --all --decorate"
+
+Now you can see your project history in pretty colors, by navigating to your project folder and typing:
+git graph
+
+If the list of commits is too long you can quit by pressing q
+
 > git remote add <remote repo url>
   I think it is optional to specify the name of the server (default origin) and
   the name of the branch (default master).

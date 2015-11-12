@@ -34,3 +34,10 @@ color:
 font-size:
 text-align:
 line-height:
+
+Apply line-height to the container, not the text.
+
+Be careful, because h1-h6 have built in margin and/or padding.
+
+When you float elements, remember to clear the next element.
+
