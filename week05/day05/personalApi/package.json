@@ -1,0 +1,15 @@
+{
+  "name": "personal-api",
+  "version": "1.0.0",
+  "description": "My very own personal API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "3chordme",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.14.1",
+    "express": "^4.13.3"
+  }
+}
