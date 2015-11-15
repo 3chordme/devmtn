@@ -1,9 +1,9 @@
 module.exports = [
   {
-    name: 'Billy Bob'
+    name: 'Jenny Joe Bob'
   },
   {
-    name: 'Joe'
+    name: 'Gurbler'
   }
 
 ];
