@@ -3,6 +3,8 @@ var bodyParser = require('body-parser');
 
 var app = express();
 
+// var Skillz = require('./models/Skillz.js')
+
 app.use = (bodyParser.json());
 
 var middleware = require('./controllers/middleware.js');
@@ -28,6 +30,8 @@ app.put('/name', mainCtrl.changeName);
 app.put('/location', mainCtrl.changeLocation);
 app.post('/hobbies', mainCtrl.addHobby);
 app.post('/occupations', mainCtrl.addOccupation);
+
+app.get('/skillz', mainCtrl.getSkillz);
 
 
 var port = 4567;

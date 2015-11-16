@@ -1,9 +1,11 @@
 module.exports = [
   {
-    name: 'Jenny Joe Bob'
+    id: 1,
+    name: 'Billy Bob Joe'
   },
   {
-    name: 'Gurbler'
+    id: 2,
+    name: 'Tom from Myspace'
   }
 
 ];

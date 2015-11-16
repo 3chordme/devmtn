@@ -1,35 +1,37 @@
 var Characters = require('../models/Characters.js')
+var Skillz = require('../models/Skillz.js')
 
 module.exports = {
 
   getName: function(req, res, next) {
-    res.status(200).json(Characters.name);
+    res.status(200).json({ name: Characters.name} );
   },
 
   getLocation: function(req, res, next) {
-    res.status(200).json(Characters.location);
+    res.status(200).json({ location: Characters.location });
   },
 
   getOccupations: function(req, res, next) {
-    res.status(200).json(Characters.occupations);
+    res.status(200).json({ occupations: Characters.occupations });
   },
 
   getOccupationsLatest: function(req, res, next) {
-    res.status(200).json(Characters.occupations[Characters.occupations.length - 1]);
+    res.status(200).json({ "latest occupation": Characters.occupations[Characters.occupations.length - 1] });
   },
 
   getHobbies: function(req, res, next) {
-    res.status(200).json(Characters.hobbies);
+    res.status(200).json({ hobbies: Characters.hobbies });
   },
 
   getHobbiesType: function(req, res, next) {
-    typeHobbies = [];
+    var typeHobbies = [];
+    var typeParam = req.params.type;
     for (var i = 0; i < Characters.hobbies.length; i++) {
       if (Characters.hobbies[i].type === req.params.type) {
         typeHobbies.push(Characters.hobbies[i]);
       }
     }
-    res.status(200).json(typeHobbies);
+    res.status(200).json({ typeParam: typeHobbies });//why doesn't this work?
   },
 //changeName is not working
   changeName: function(req, res, next) {
@@ -50,6 +52,12 @@ module.exports = {
 
   addOccupation: function(req, res, next) {
     res.status(200).json({ message: 'occupation added' });
+  },
+
+  getSkillz: function(req, res, next) {
+    if (req.query.experience === 'intermediate') {
+      res.status(200).json({ skillz: Skillz })
+    }
   }
 
 };

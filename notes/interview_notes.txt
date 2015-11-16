@@ -13,3 +13,13 @@ Three types of scope in angular: isolated, inherited, shared.
 Apply, Call, Binding. Types of binding implicit, explicit, ...
 
 Learn CSS really well. - try stylus (says Zac).
+
+What is REST? What is RESTful?
+
+Describe Client-Server.
+
+What is URI? What is URL?
+
+Describe the difference between session and cookie in express.
+
+
