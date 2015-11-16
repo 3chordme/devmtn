@@ -30,5 +30,26 @@ module.exports = {
       }
     }
     res.status(200).json(typeHobbies);
+  },
+//changeName is not working
+  changeName: function(req, res, next) {
+    console.log('req is', req); //always undefined??
+    console.log('body is', req.body);
+    Characters.name = 'Justin Bobbler'; //this works though
+    res.status(200).json({ message: 'name changed' });
+  },
+
+  changeLocation: function(req, res, next) {
+
+    res.status(200).json({ message: 'location changed' });
+  },
+
+  addHobby: function(req, res, next) {
+    res.status(200).json({ message: 'hobby added' });
+  },
+
+  addOccupation: function(req, res, next) {
+    res.status(200).json({ message: 'occupation added' });
   }
+
 };
