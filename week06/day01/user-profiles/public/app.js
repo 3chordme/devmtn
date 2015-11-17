@@ -15,6 +15,9 @@ angular.module('userProfiles', ['ui.router'])
 		resolve: {
 			userInfo: function( $http ) {
 				/* FIX ME */
+				return $http.get('/api/profiles').then(function(response) {
+					return response.data;
+				});
 			}
 		}
 	});
