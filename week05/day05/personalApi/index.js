@@ -10,7 +10,7 @@ app.use = (bodyParser.json());
 var middleware = require('./controllers/middleware.js');
 var mainCtrl = require('./controllers/mainCtrl.js');
 
-// app.use(middleware.addHeaders);
+app.use(middleware.addHeaders);
 
 // app.use(function(req, res, next) {
 //   console.log('req.body is', req.body);

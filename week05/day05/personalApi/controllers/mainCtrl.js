@@ -37,7 +37,7 @@ module.exports = {
   changeName: function(req, res, next) {
     console.log('req is', req); //always undefined??
     console.log('body is', req.body);
-    Characters.name = 'Justin Bobbler'; //this works though
+    // Characters.name = 'Justin Bobbler'; //this works though
     res.status(200).json({ message: 'name changed' });
   },
 
