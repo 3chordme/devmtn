@@ -1,5 +1,7 @@
 ANGULAR NOTES
 
+Research $resource
+
 --------FROM PAISLEE.IO--------
 
 AngularJS does three things:
