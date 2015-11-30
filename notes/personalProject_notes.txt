@@ -1,0 +1,27 @@
+Personal Project
+
+google modern web design and copy it.
+check out blueprints in senior class room.
+
+requirements:
+
+Failure to follow will disqualify you from working on group projects.
+
+MEAN application. Mongo Express Angular Node.
+At least one ref and one populate. At least two collections. Like customers, and business.
+When in doubt, copy something.
+Clone amazon. Or do any ecommerce clone. It shows well as a first project.
+Quiz and questionnaire sites also show well.
+Focus on data and apps and complexity.
+Link aggregators like reddit.
+Social websites.
+Management - time, employees.
+Appointments. Scheduling.
+Wait to do auth until Dec 1st. Hardcode a username and password.
+Find an actual business or person willing to buy a website.
+
+coderbyte.com, grunt or gulp or less tutorials. pick one maybe two new techs.
+When you have a problem, come up with a list before you ask questions. Employers like that.
+profiles.devmounta.in <the website shared with employers to show who graduated and their projects. Needs to be filled out.
+
+Keep a done list. Update nightly. Describe what you accomplished that day so that you don't forget what you have done.
