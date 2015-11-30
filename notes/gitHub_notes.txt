@@ -2,17 +2,23 @@ Git is a distributed version control system. You can track changes, and you can 
 tracked changes. SVN used to be the standard, but you couldn't branch.
 
 git init
-git status
+git status AKA git st
+git log
 git add
 git commit
 git push
 git pull
 git remote add
 git clone
-git branch
+git branch AKA git br > -a
+git checkout AKA git co
+
+You can set up aliases.
 
 Git tip!!!! go to your terminal, any folder, and type the following:
 >git config --global alias.graph "log --graph --oneline --all --decorate"
+
+Git hash is a (almost definitely) unique id for the commit.
 
 Now you can see your project history in pretty colors, by navigating to your project folder and typing:
 git graph
