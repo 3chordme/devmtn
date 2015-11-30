@@ -1,24 +1,38 @@
 Git is a distributed version control system. You can track changes, and you can share those
 tracked changes. SVN used to be the standard, but you couldn't branch.
 
+git help <concept>
 git init
 git status AKA git st
 git log
 git add
 git commit
+git remote add origin <URL>
+git fetch origin
+git push origin master
+git push --set-upstream origin master
 git push
 git pull
 git remote add
+git remote remove
+less .git/config
 git clone
 git branch AKA git br > -a
 git checkout AKA git co
+git config user.name
+git config user.email
+git config --list
+git config [--global] user.name "Alvin J. Alexander" > no global = only this project
+changes to config are contained in ~/.gitconfig
+
 
 You can set up aliases.
 
 Git tip!!!! go to your terminal, any folder, and type the following:
 >git config --global alias.graph "log --graph --oneline --all --decorate"
 
-Git hash is a (almost definitely) unique id for the commit.
+Git hash is a (almost definitely) unique id for each commit. An algorithm determines
+what the hash will be.
 
 Now you can see your project history in pretty colors, by navigating to your project folder and typing:
 git graph
