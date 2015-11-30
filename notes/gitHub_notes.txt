@@ -1,6 +1,8 @@
 Git is a distributed version control system. You can track changes, and you can share those
 tracked changes. SVN used to be the standard, but you couldn't branch.
 
+You can edit files on the github website, and commit those changes from the website too.
+
 git help <concept>
 git init
 git status AKA git st
