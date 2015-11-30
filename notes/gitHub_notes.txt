@@ -1,3 +1,6 @@
+Git is a distributed version control system. You can track changes, and you can share those
+tracked changes. SVN used to be the standard, but you couldn't branch.
+
 git init
 git status
 git add
