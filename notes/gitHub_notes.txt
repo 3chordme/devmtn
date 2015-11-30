@@ -30,6 +30,9 @@ changes to config are contained in ~/.gitconfig
 to add and commit do:
 git commit -am "message here"
 
+git mergetool
+git difftool
+
 You can set up aliases.
 
 Git tip!!!! go to your terminal, any folder, and type the following:
