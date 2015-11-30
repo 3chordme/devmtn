@@ -27,6 +27,8 @@ git config --list
 git config [--global] user.name "Alvin J. Alexander" > no global = only this project
 changes to config are contained in ~/.gitconfig
 
+to add and commit do:
+git commit -am "message here"
 
 You can set up aliases.
 
